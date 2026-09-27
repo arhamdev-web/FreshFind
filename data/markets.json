@@ -1,0 +1,185 @@
+{
+  "markets": [
+    {
+      "id": "market001",
+      "name": "Clifton Sunday Bazaar",
+      "city": "Karachi",
+      "area": "Clifton",
+      "address": "Block 2, Clifton, Karachi",
+      "coordinates": { "lat": 24.8138, "lng": 67.0300 },
+      "schedule": [
+        { "day": "Sunday", "opens": "08:00", "closes": "14:00" }
+      ],
+      "produce": ["Vegetables", "Fruits", "Herbs"],
+      "description": "A relaxed seaside-adjacent Sunday market known for fresh herbs and a wide fruit selection.",
+      "image": "assets/images/marketClifton.webp",
+      "featured": true
+    },
+    {
+      "id": "market002",
+      "name": "DHA Green Market",
+      "city": "Karachi",
+      "area": "DHA Phase 6",
+      "address": "Khayaban-e-Shahbaz, DHA Phase 6, Karachi",
+      "coordinates": { "lat": 24.8000, "lng": 67.0650 },
+      "schedule": [
+        { "day": "Wednesday", "opens": "15:00", "closes": "20:00" }
+      ],
+      "produce": ["Leafy Greens", "Dairy", "Eggs"],
+      "description": "A weekday evening market popular for farm-fresh dairy and leafy greens.",
+      "image": "assets/images/marketDHA.webp",
+      "featured": false
+    },
+    {
+      "id": "market003",
+      "name": "Liberty Farmers Market",
+      "city": "Lahore",
+      "area": "Gulberg III",
+      "address": "Liberty Market, Gulberg III, Lahore",
+      "coordinates": { "lat": 31.5099, "lng": 74.3436 },
+      "schedule": [
+        { "day": "Saturday", "opens": "09:00", "closes": "13:00" }
+      ],
+      "produce": ["Fruits", "Nuts", "Honey"],
+      "description": "A Saturday-morning staple in Gulberg, best known for seasonal fruit and local honey.",
+      "image": "assets/images/marketLiberty.webp",
+      "featured": true
+    },
+    {
+      "id": "market004",
+      "name": "Model Town Organic Market",
+      "city": "Lahore",
+      "area": "Model Town",
+      "address": "Block C, Model Town, Lahore",
+      "coordinates": { "lat": 31.4805, "lng": 74.3230 },
+      "schedule": [
+        { "day": "Friday", "opens": "16:00", "closes": "20:00" }
+      ],
+      "produce": ["Organic Vegetables", "Herbs"],
+      "description": "A small organic-focused market run by a handful of local growers.",
+      "image": "assets/images/marketModelTown.webp",
+      "featured": false
+    },
+    {
+      "id": "market005",
+      "name": "F-10 Weekend Market",
+      "city": "Islamabad",
+      "area": "F-10 Markaz",
+      "address": "F-10 Markaz, Islamabad",
+      "coordinates": { "lat": 33.6938, "lng": 73.0113 },
+      "schedule": [
+        { "day": "Saturday", "opens": "08:00", "closes": "12:00" },
+        { "day": "Sunday", "opens": "08:00", "closes": "12:00" }
+      ],
+      "produce": ["Vegetables", "Fruits", "Bakery"],
+      "description": "A busy weekend market with a wide produce spread and a couple of local bakery stalls.",
+      "image": "assets/images/marketF10.webp",
+      "featured": true
+    },
+    {
+      "id": "market006",
+      "name": "Jinnah Colony Community Market",
+      "city": "Faisalabad",
+      "area": "Jinnah Colony",
+      "address": "Jinnah Colony, Faisalabad",
+      "coordinates": { "lat": 31.4180, "lng": 73.0790 },
+      "schedule": [
+        { "day": "Thursday", "opens": "17:00", "closes": "21:00" }
+      ],
+      "produce": ["Grains", "Dairy", "Vegetables"],
+      "description": "A neighborhood evening market known for grains and dairy straight from nearby farms.",
+      "image": "assets/images/marketJinnah.webp",
+      "featured": false
+    },
+    {
+      "id": "market007",
+      "name": "Raja Bazaar Vegetable Market",
+      "city": "Rawalpindi",
+      "area": "Raja Bazaar",
+      "address": "Raja Bazaar, Rawalpindi",
+      "coordinates": { "lat": 33.5945, "lng": 73.0479 },
+      "schedule": [
+        { "day": "Monday", "opens": "07:00", "closes": "11:00" }
+      ],
+      "produce": ["Vegetables", "Fruits", "Spices"],
+      "description": "A busy early-morning wholesale-adjacent market known for its spice stalls.",
+      "image": "assets/images/marketRajaBazaar.webp",
+      "featured": false
+    },
+    {
+      "id": "market008",
+      "name": "Multan Cantt Farmers Market",
+      "city": "Multan",
+      "area": "Cantt",
+      "address": "Cantt Area, Multan",
+      "coordinates": { "lat": 30.1980, "lng": 71.4600 },
+      "schedule": [
+        { "day": "Tuesday", "opens": "16:00", "closes": "20:00" }
+      ],
+      "produce": ["Mangoes", "Vegetables", "Dates"],
+      "description": "Set in Pakistan's mango capital, this market is the place to go for peak-season mangoes.",
+      "image": "assets/images/marketMultanCantt.webp",
+      "featured": true
+    },
+    {
+      "id": "market009",
+      "name": "Saddar Farmers Market",
+      "city": "Peshawar",
+      "area": "Saddar",
+      "address": "Saddar Road, Peshawar",
+      "coordinates": { "lat": 34.0089, "lng": 71.5405 },
+      "schedule": [
+        { "day": "Sunday", "opens": "08:00", "closes": "13:00" }
+      ],
+      "produce": ["Fruits", "Nuts", "Dried Fruits"],
+      "description": "A Sunday market well known for dried fruit and nut vendors alongside fresh produce.",
+      "image": "assets/images/marketSaddar.webp",
+      "featured": false
+    },
+    {
+      "id": "market010",
+      "name": "Latifabad Community Market",
+      "city": "Hyderabad",
+      "area": "Latifabad",
+      "address": "Latifabad Unit 7, Hyderabad",
+      "coordinates": { "lat": 25.3792, "lng": 68.3489 },
+      "schedule": [
+        { "day": "Friday", "opens": "16:00", "closes": "20:00" }
+      ],
+      "produce": ["Vegetables", "Fish", "Dates"],
+      "description": "A neighborhood evening market with a strong local following for fresh vegetables and dates.",
+      "image": "assets/images/marketLatifabad.webp",
+      "featured": false
+    },
+    {
+      "id": "market011",
+      "name": "Sialkot Cantt Farmers Market",
+      "city": "Sialkot",
+      "area": "Cantt",
+      "address": "Cantt Area, Sialkot",
+      "coordinates": { "lat": 32.5122, "lng": 74.5300 },
+      "schedule": [
+        { "day": "Saturday", "opens": "08:00", "closes": "12:00" }
+      ],
+      "produce": ["Vegetables", "Fruits", "Dairy"],
+      "description": "A tidy Saturday market serving the Cantt area with everyday produce and dairy.",
+      "image": "assets/images/marketSialkotCantt.webp",
+      "featured": false
+    },
+    {
+      "id": "market012",
+      "name": "Liaquat Bazaar Market",
+      "city": "Quetta",
+      "area": "Liaquat Bazaar",
+      "address": "Liaquat Bazaar, Quetta",
+      "coordinates": { "lat": 30.1910, "lng": 66.9911 },
+      "schedule": [
+        { "day": "Thursday", "opens": "15:00", "closes": "19:00" }
+      ],
+      "produce": ["Fruits", "Nuts", "Dried Fruits"],
+      "description": "Known for Balochistan's famous fruit and dry-fruit stalls, especially pomegranates.",
+      "image": "assets/images/marketLiaquatBazaar.webp",
+      "featured": true
+    }
+  ]
+}

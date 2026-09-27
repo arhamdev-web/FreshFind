@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFind — Log In / Sign Up</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+
+    <!-- Loading Overlay -->
+
+    <div class="loadingOverlay" id="loadingOverlay">
+        <div class="loadingAnimation" id="loadingAnimation"></div>
+        <p class="loadingText">Getting things fresh for you...</p>
+    </div>
+
+    <!-- Auth Section -->
+
+    <section class="authSection">
+        <div class="authCard fadeInUp">
+            <div class="authBrand">
+                <img src="assets/logo/freshfindLogo.webp" alt="FreshFind Logo" class="authBrandLogo">
+                <span>FreshFind</span>
+            </div>
+
+            <div class="authTabs">
+                <button type="button" class="authTabButton authTabActive" id="loginTabButton">Log In</button>
+                <button type="button" class="authTabButton" id="signupTabButton">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+
+            <form class="authForm" id="loginForm">
+                <div class="authFormGroup">
+                    <label for="loginEmail">Email</label>
+                    <input type="text" id="loginEmail" name="email" placeholder="Enter your email">
+                    <p class="authError" id="loginEmailError"></p>
+                </div>
+                <div class="authFormGroup">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="Enter your password">
+                    <p class="authError" id="loginPasswordError"></p>
+                </div>
+                <button type="submit" class="authSubmitButton">Log In</button>
+                <p class="authSwitchText">
+                    Don't have an account?
+                    <span class="authSwitchLink" id="switchToSignup">Sign Up</span>
+                </p>
+            </form>
+
+            <!-- Sign Up Form -->
+
+                        <!-- Sign Up Form -->
+
+            <form class="authForm authFormHidden" id="signupForm">
+                <div class="authFormGrid">
+                    <div class="authFormGroup">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" name="name" placeholder="Enter your full name">
+                        <p class="authError" id="signupNameError"></p>
+                    </div>
+                    <div class="authFormGroup">
+                        <label for="signupEmail">Email</label>
+                        <input type="text" id="signupEmail" name="email" placeholder="Enter your email">
+                        <p class="authError" id="signupEmailError"></p>
+                    </div>
+                    <div class="authFormGroup">
+                        <label for="signupPhone">Phone Number</label>
+                        <input type="tel" id="signupPhone" name="phone" placeholder="Enter your phone number">
+                        <p class="authError" id="signupPhoneError"></p>
+                    </div>
+                    <div class="authFormGroup">
+                        <label for="signupCity">City</label>
+                        <input type="text" id="signupCity" name="city" placeholder="Enter your city">
+                        <p class="authError" id="signupCityError"></p>
+                    </div>
+                    <div class="authFormGroup">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" name="password" placeholder="Create a password">
+                        <p class="authError" id="signupPasswordError"></p>
+                    </div>
+                    <div class="authFormGroup">
+                        <label for="signupConfirmPassword">Confirm Password</label>
+                        <input type="password" id="signupConfirmPassword" name="confirmPassword" placeholder="Re-enter your password">
+                        <p class="authError" id="signupConfirmPasswordError"></p>
+                    </div>
+                </div>
+                <button type="submit" class="authSubmitButton">Sign Up</button>
+                <p class="authSwitchText">
+                    Already have an account?
+                    <span class="authSwitchLink" id="switchToLogin">Log In</span>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

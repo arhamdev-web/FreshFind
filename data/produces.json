@@ -1,0 +1,235 @@
+{
+  "produces": [
+    {
+        "id": "produce001",
+        "name": "Tomatoes",
+        "category": "Vegetables",
+        "description": "A juicy, versatile fruit used as a vegetable in almost every Pakistani kitchen, from curries to salads.", "growingProcess": "Grown from seedlings in warm, sunny fields and harvested once they ripen to a deep red.",
+        "howItReachesMarket": "Picked in the early morning and brought to market the same day to stay fresh.",
+        "image": "assets/images/produceTomatoes.webp"
+    },
+    {
+        "id": "produce002",
+        "name": "Spinach",
+        "category": "Vegetables",
+        "description": "A leafy green packed with iron, commonly cooked into palak saag.",
+        "growingProcess": "Grown in cooler months from seed, ready to harvest in just a few weeks.",
+        "howItReachesMarket": "Bundled at the farm and delivered fresh within a day of picking.",
+        "image": "assets/images/produceSpinach.webp"
+    },
+    {
+        "id": "produce003",
+        "name": "Carrots",
+        "category": "Vegetables",
+        "description": "A crunchy root vegetable eaten raw, in salads, or cooked into gajar ka halwa.",
+        "growingProcess": "Grown underground in loose, sandy soil over a full growing season.",
+        "howItReachesMarket": "Pulled, washed, and bunched at the farm before being trucked to local markets.",
+        "image": "assets/images/produceCarrots.webp"
+    },
+    {
+        "id": "produce004",
+        "name": "Potatoes",
+        "category": "Vegetables",
+        "description": "A kitchen staple used in nearly every style of Pakistani cooking.",
+        "growingProcess": "Grown from seed potatoes planted in mounded soil and harvested once the plants die back.",
+        "howItReachesMarket": "Stored briefly at the farm, then sacked and delivered in bulk to markets.",
+        "image": "assets/images/producePotatoes.webp"
+    },
+    {
+        "id": "produce005",
+        "name": "Mint",
+        "category": "Herbs",
+        "description": "A fragrant herb central to chutneys, raita, and iced drinks.",
+        "growingProcess": "Grown in moist soil or containers, spreading quickly from cuttings.",
+        "howItReachesMarket": "Cut fresh and bundled the same morning it's sold, since it wilts quickly.",
+        "image": "assets/images/produceMint.webp"
+    },
+    {
+        "id": "produce006",
+        "name": "Coriander",
+        "category": "Herbs",
+        "description": "A bright, citrusy herb used as a garnish and flavor base in most Pakistani dishes.",
+        "growingProcess": "Grown from seed in cooler weather and harvested while the leaves are still tender.",
+        "howItReachesMarket": "Bunched at the farm and kept in damp cloth to stay fresh for market.",
+        "image": "assets/images/produceCoriander.webp"
+    },
+    {
+        "id": "produce007",
+        "name": "Mangoes",
+        "category": "Fruits",
+        "description": "Pakistan's most celebrated fruit, prized for its sweetness during the summer season.",
+        "growingProcess": "Grown on orchard trees over several months, ripening fully in the summer heat.",
+        "howItReachesMarket": "Hand-picked at peak ripeness and transported quickly to avoid bruising.",
+        "image": "assets/images/produceMangoes.webp" },
+    {
+        "id": "produce008",
+        "name": "Kinnow",
+        "category": "Fruits",
+        "description": "A juicy, easy-to-peel citrus variety especially popular in Punjab during winter.",
+        "growingProcess": "Grown on citrus trees over a long season, sweetening as winter approaches.",
+        "howItReachesMarket": "Harvested by hand and crated for transport to markets across the country.",
+        "image": "assets/images/produceKinnow.webp"
+    },
+    {
+        "id": "produce009",
+        "name": "Bananas",
+        "category": "Fruits",
+        "description": "A year-round, energy-rich fruit sold individually or by the dozen.",
+        "growingProcess": "Grown in warm, humid regions and harvested in large bunches while still green.",
+        "howItReachesMarket": "Ripened along the way to market so they arrive ready to eat.",
+        "image": "assets/images/produceBananas.webp" },
+    {
+        "id": "produce010",
+        "name": "Guava",
+        "category": "Fruits",
+        "description": "A fragrant, slightly tart fruit popular fresh or sprinkled with spice mix.",
+        "growingProcess": "Grown on small trees and harvested by hand once the skin turns pale green-yellow.",
+        "howItReachesMarket": "Picked just before full ripeness so it holds up during transport.",
+        "image": "assets/images/produceGuava.webp"
+    },
+    {
+        "id": "produce011",
+        "name": "Milk",
+        "category": "Dairy",
+        "description": "Fresh cow or buffalo milk, a daily household essential.",
+        "growingProcess": "Sourced from dairy farms with daily milking routines.",
+        "howItReachesMarket": "Collected each morning and delivered in chilled containers the same day.",
+        "image": "assets/images/produceMilk.webp"
+    },
+    {
+        "id": "produce012",
+        "name": "Yogurt",
+        "category": "Dairy",
+        "description": "A tangy, creamy staple used in raita, lassi, and everyday meals.",
+        "growingProcess": "Made by culturing fresh milk with a starter until it thickens naturally.",
+        "howItReachesMarket": "Set in small batches and kept cool until it reaches the market stall.",
+        "image": "assets/images/produceYogurt.webp"
+    },
+    {
+        "id": "produce013",
+        "name": "Wheat",
+        "category": "Grains",
+        "description": "Pakistan's staple grain, ground into flour for roti and naan.",
+        "growingProcess": "Sown in winter and harvested in early summer once the stalks turn golden.",
+        "howItReachesMarket": "Threshed at the farm, bagged, and sold in bulk to local mills and markets.",
+        "image": "assets/images/produceWheat.webp"
+    },
+    {
+        "id": "produce014",
+        "name": "Honey",
+        "category": "Other",
+        "description": "Raw, unprocessed honey harvested from local beekeepers.",
+        "growingProcess": "Produced by bee colonies kept near flowering fields and orchards.", 
+        "howItReachesMarket": "Extracted from the comb and jarred close to where it's harvested.",
+        "image": "assets/images/produceHoney.webp"
+    },
+    {
+        "id": "produce015",
+        "name": "Free-Range Eggs",
+        "category": "Other",
+        "description": "Eggs from hens raised outdoors rather than in cages.",
+        "growingProcess": "Laid daily by hens that roam and feed freely on small farms.",
+        "howItReachesMarket": "Collected daily and carried to market in trays to keep them from cracking.",
+        "image": "assets/images/produceEggs.webp"
+    },
+    {
+        "id": "produce016",
+        "name": "Turnips",
+        "category": "Vegetables",
+        "description": "A mild, slightly peppery root vegetable often paired with winter greens.",
+        "growingProcess": "Grown in cool soil through the winter months and pulled once the roots mature.",
+        "howItReachesMarket": "Harvested by hand, washed, and bundled for same-day delivery to market.",
+        "image": "assets/images/produceTurnips.webp"
+    },
+    {
+        "id": "produce017",
+        "name": "Watermelon",
+        "category": "Fruits",
+        "description": "A refreshing, water-rich fruit that's a summer favorite across Pakistan.",
+        "growingProcess": "Grown on sprawling vines in hot weather, taking a full summer to ripen.",
+        "howItReachesMarket": "Picked once fully ripe and transported by truck given how quickly it needs to reach market.",
+        "image": "assets/images/produceWatermelon.webp"
+    },
+    {
+        "id": "produce018",
+        "name": "Cucumber",
+        "category": "Vegetables",
+        "description": "A cool, crisp vegetable eaten raw in salads or as a refreshing summer side.",
+        "growingProcess": "Grown on climbing vines in warm weather and harvested while still young and tender.",
+        "howItReachesMarket": "Picked frequently through the season and delivered fresh within a day.",
+        "image": "assets/images/produceCucumber.webp"
+    },
+    {
+        "id": "produce019",
+        "name": "Peaches",
+        "category": "Fruits",
+        "description": "A soft, fragrant stone fruit with a short but much-loved summer season.",
+        "growingProcess": "Grown on orchard trees, ripening over the peak summer months.",
+        "howItReachesMarket": "Hand-picked carefully to avoid bruising, then delivered quickly to nearby markets.",
+        "image": "assets/images/producePeaches.webp"
+    },
+    {
+        "id": "produce020",
+        "name": "Pomegranate",
+        "category": "Fruits",
+        "description": "A jewel-seeded fruit prized for its juice and its use in salads and chutneys.",
+        "growingProcess": "Grown on hardy shrubs, ripening as the weather cools into autumn.",
+        "howItReachesMarket": "Harvested by hand once the skin hardens and delivered in crates to avoid damage.",
+        "image": "assets/images/producePomegranate.webp"
+    },
+    {
+        "id": "produce021",
+        "name": "Sweet Potatoes",
+        "category": "Vegetables",
+        "description": "A naturally sweet root vegetable, often roasted or boiled as a warming autumn dish.",
+        "growingProcess": "Grown underground through the warm months and harvested as autumn begins.",
+        "howItReachesMarket": "Dug up, cured briefly at the farm, then sacked for delivery to market.",
+        "image": "assets/images/produceSweetPotatoes.webp"
+    },
+    {
+        "id": "produce022",
+        "name": "Persimmon",
+        "category": "Fruits",
+        "description": "A honey-sweet fruit that ripens into a soft, glowing orange treat in autumn.",
+        "growingProcess": "Grown on deciduous trees, ripening fully just as the leaves begin to fall.",
+        "howItReachesMarket": "Picked at the right ripeness stage and carefully crated for transport.",
+        "image": "assets/images/producePersimmon.webp"
+    },
+    {
+        "id": "produce023",
+        "name": "Strawberries",
+        "category": "Fruits",
+        "description": "A bright, sweet berry that signals the start of spring.",
+        "growingProcess": "Grown low to the ground on small plants, ripening quickly in mild spring weather.",
+        "howItReachesMarket": "Picked by hand every couple of days and rushed to market given how delicate they are.",
+        "image": "assets/images/produceStrawberries.webp"
+    },
+    {
+        "id": "produce024",
+        "name": "Green Peas",
+        "category": "Vegetables", 
+        "description": "Small, sweet peas enjoyed fresh in pulao and everyday curries.",
+        "growingProcess": "Grown on climbing vines through the cooler spring months.",
+        "howItReachesMarket": "Picked while still tender and delivered in pods to keep them fresh longer.",
+        "image": "assets/images/produceGreenPeas.webp"
+    },
+    {
+        "id": "produce025",
+        "name": "Radishes",
+        "category": "Vegetables",
+        "description": "A crisp, peppery root vegetable often eaten raw with salt as a simple side.",
+        "growingProcess": "Grown quickly in loose soil, ready to harvest just weeks after planting.",
+        "howItReachesMarket": "Pulled, rinsed, and bundled at the farm on the morning of market day.",
+        "image": "assets/images/produceRadishes.webp"
+    },
+    {
+        "id": "produce026",
+        "name": "Lettuce",
+        "category": "Vegetables",
+        "description": "A crunchy leafy green that forms the base of most fresh salads.",
+        "growingProcess": "Grown in mild spring temperatures, which keep the leaves tender rather than bitter.",
+        "howItReachesMarket": "Cut just before market day since it wilts quickly once harvested.",
+        "image": "assets/images/produceLettuce.webp"
+    }
+  ]
+}

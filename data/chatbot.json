@@ -1,0 +1,64 @@
+{
+  "responses": [
+    {
+      "id": "howToFindMarket",
+      "keywords": ["find", "market", "near", "search"],
+      "question": "How do I find a market?",
+      "answer": "Head to the Find Market page and search by market name, or filter by city, area, day, or time to see what's open near you."
+    },
+    {
+      "id": "marketsOpenToday",
+      "keywords": ["open", "today", "now"],
+      "question": "What markets are open today?",
+      "answer": "Use the Day filter on the Find Market page and pick today's day to see every market running today."
+    },
+    {
+      "id": "whereVegetables",
+      "keywords": ["vegetable", "vegetables", "veggies"],
+      "question": "Where can I find vegetables?",
+      "answer": "Check the Produce Guide for a full list of vegetables, or filter markets on the Find Market page by the produce you're after."
+    },
+    {
+      "id": "whatIsSeasonal",
+      "keywords": ["season", "seasonal"],
+      "question": "What is seasonal produce?",
+      "answer": "Seasonal produce is whatever's naturally being harvested right now. Visit the Seasonal Produce page and pick a season to see what's fresh."
+    },
+    {
+      "id": "howFreshFindWorks",
+      "keywords": ["how", "works", "freshfind"],
+      "question": "How does FreshFind work?",
+      "answer": "FreshFind lists real farmers markets near you, what days and hours they run, and what produce they typically carry — all in one place."
+    },
+    {
+      "id": "howViewMarketDetails",
+      "keywords": ["details", "market details", "more info"],
+      "question": "How can I view market details?",
+      "answer": "Click \"See Details\" on any market card and you'll get its full schedule, address, produce list, and location on the map."
+    },
+    {
+      "id": "howContact",
+      "keywords": ["contact", "reach", "feedback", "support"],
+      "question": "How do I contact FreshFind?",
+      "answer": "Head to the Contact page and send us a message — we'd love to hear from you."
+    },
+    {
+      "id": "greeting",
+      "keywords": ["hello", "hi", "hey"],
+      "question": null,
+      "answer": "Hi! I'm the FreshFind assistant. Ask me about finding a market, seasonal produce, or how the site works."
+    },
+    {
+      "id": "thanks",
+      "keywords": ["thanks", "thank you"],
+      "question": null,
+      "answer": "You're welcome! Let me know if there's anything else you'd like to know about FreshFind."
+    },
+    {
+      "id": "fallback",
+      "keywords": [],
+      "question": null,
+      "answer": "I'm not totally sure about that one — try asking about finding a market, produce, or seasonal picks."
+    }
+  ]
+}

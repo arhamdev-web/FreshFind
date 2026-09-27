@@ -1,0 +1,24 @@
+{
+  "seasons": [
+    {
+        "season": "winter",
+        "displayName": "Winter",
+        "produceIds": ["produce002", "produce003", "produce006", "produce008", "produce016"]
+    },
+    {
+        "season": "summer",
+        "displayName": "Summer",
+        "produceIds": ["produce001", "produce007", "produce017", "produce018", "produce019"]
+    },
+    {
+        "season": "autumn",
+        "displayName": "Autumn",
+        "produceIds": ["produce004", "produce010", "produce020", "produce021", "produce022"]
+    },
+    {
+        "season": "spring",
+        "displayName": "Spring",
+        "produceIds": ["produce005", "produce023", "produce024", "produce025", "produce026"]
+    }
+  ]
+}

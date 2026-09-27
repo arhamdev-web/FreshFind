@@ -1,0 +1,565 @@
+# FreshFind — Complete Website Requirements
+
+I want to build a complete **FreshFind** website using only **HTML, CSS, JavaScript, and JSON**. Do not introduce React, Tailwind, backend frameworks, databases, or other technologies unless I specifically ask for them.
+
+The website should feel modern, polished, smooth, interactive, responsive, and visually attractive. The goal is to make it feel like a proper finished website rather than a collection of simple HTML pages.
+
+## 1. Landing Page
+
+Create a landing page that acts as an **introductory experience to FreshFind**, rather than looking like a normal webpage.
+
+It should include:
+
+* Beautiful and appropriate typography.
+* High-quality fruit, vegetable, farming, and market imagery according to the purpose of FreshFind.
+* A strong visual introduction to what FreshFind does.
+* Smooth animations and transitions.
+* An **"Explore FreshFind"** button.
+
+When the user clicks **Explore FreshFind**, the transition into the actual website should feel smooth and intentional rather than simply looking like an instant page redirect.
+
+The landing page should feel like an introduction/entry experience to the FreshFind platform.
+
+---
+
+# 2. Dummy Login & Sign Up
+
+Create a separate authentication page where the user can:
+
+* Log in.
+* Sign up.
+* Switch between Login and Sign Up.
+
+This is **ONLY dummy frontend authentication** for this project.
+
+There is no real backend authentication, database, password security system, email verification, or server-side authentication.
+
+The JavaScript can use `localStorage` to simulate a user account/session.
+
+### Login
+
+Include:
+
+* Email
+* Password
+* Login button
+
+### Sign Up
+
+Include:
+
+* Name
+* Email
+* Phone Number
+* Password
+* Confirm Password
+* Area
+* Sign Up button
+
+The forms must be properly validated.
+
+After successful Login or Sign Up, the user should be considered logged in and taken to the Home Page.
+
+All main website pages should check whether the user is logged in. If they are not logged in, redirect them to the authentication page.
+
+The landing page and authentication page should remain accessible without authentication.
+
+Include a Logout functionality where appropriate.
+
+Again, this authentication is only a frontend demonstration and should not be presented as secure real authentication.
+
+---
+
+# 3. Home Page
+
+Create a Home Page containing:
+
+### Navbar
+
+The navbar should contain consistent navigation throughout the website:
+
+* Home
+* Find Market
+* Market Directory
+* Produce Guide
+* Seasonal Produce
+* About
+* Contact
+
+The navbar must have the same overall design and behavior throughout all main website pages.
+
+The **Market Details page must NOT appear as a normal navbar link.**
+
+A user should only reach the Market Details page by clicking **"See Details"** from a market card.
+
+### Hero Section
+
+Create a large hero section containing:
+
+* A full-width market/farming image.
+* A clean/white or light content area for text.
+* A strong FreshFind tagline.
+* A search bar.
+* A **Find a Market** button.
+* An **Explore Markets** button.
+
+The hero should feel modern and visually engaging.
+
+### Featured Markets
+
+Create a Featured Markets section.
+
+* Fetch the markets from JSON.
+* Display approximately 3–4 featured markets.
+* Each market card should contain relevant information.
+* Each card should contain a **See Details** button.
+* Clicking See Details should open the selected Market Details page using the market's unique ID.
+
+Do not hardcode the same market information separately on every page.
+
+### About Preview
+
+Include a small About section introducing FreshFind.
+
+### Footer
+
+Create a complete footer.
+
+The footer must remain visually and structurally consistent throughout the website.
+
+---
+
+# 4. Find A Market
+
+Create a dedicated Find Market page.
+
+### Hero Section
+
+Include a visually attractive hero section with an image that helps users understand that this page is for finding local markets.
+
+### Search & Filters
+
+Under the hero section, create a centered search/filter area.
+
+The user should be able to:
+
+* Search by market name.
+* Filter by Area.
+* Filter by Day.
+* Filter by Time.
+* Reset all filters.
+
+The search and filters must work with the market data stored in JSON.
+
+### Filter Dropdowns
+
+The dropdown options should be generated from the JSON data where appropriate.
+
+For Time, do NOT display exact times such as:
+
+`10:00 AM`
+
+Instead use user-friendly categories such as:
+
+* Morning
+* Afternoon
+* Evening
+* Night
+
+Only matching market cards should remain visible after searching/filtering.
+
+If no market matches the user's search/filter, display a clear:
+
+**NO MARKET FOUND**
+
+message.
+
+Include a reset control to return to the complete market list.
+
+### Market Cards
+
+Display all markets from the JSON when no filters are active.
+
+Each card should contain useful information such as:
+
+* Market name
+* Area
+* Location
+* Opening information
+* Available produce
+* Image
+* Short description
+* See Details button
+
+The **See Details** button should be the way the user accesses the Market Details page.
+
+---
+
+# 5. Market Directory
+
+Create a Market Directory page.
+
+This page should contain:
+
+* Market cards.
+* Short market information.
+* Available products/produce.
+* An embedded map showing the locations of all markets.
+
+The map should display the market locations using pins/markers based on the market data.
+
+### Expand Functionality
+
+Each market card should have an:
+
+**Expand**
+
+button.
+
+When the user clicks Expand:
+
+* Display a popup/modal card.
+* The popup should NOT occupy the entire screen width.
+* It may use more vertical space if necessary.
+* Keep the information concise enough that the user does not have to scroll inside the popup.
+* Include a **See Details** button at the bottom.
+
+Clicking **See Details** should take the user to the Market Details page for that specific market.
+
+The Market Details page should receive the market ID so it knows which market to display.
+
+---
+
+# 6. Market Details Page
+
+Create a dedicated Market Details page.
+
+This page should only be accessible through a market card's **See Details** button.
+
+Use a unique market ID through the URL, for example:
+
+`marketDetails.html?id=market001`
+
+The JavaScript should read the ID and load the correct market information from JSON.
+
+The page should display complete information about the selected market, including:
+
+* Market name
+* Description/about
+* Address
+* Area
+* Location
+* Available products
+* Opening and closing times
+* Days
+* Weekly schedule
+* Other relevant market information
+* Market image
+
+The embedded map on this page must show **ONLY the selected market's location**, not all market locations.
+
+Do not duplicate market information manually across pages. Load the selected market from JSON.
+
+---
+
+# 7. Produce Guide
+
+Create a Produce Guide page.
+
+Users should be able to search and browse products such as:
+
+* Vegetables
+* Fruits
+* Dairy
+* Herbs
+* Other relevant produce
+
+The produce information should come from JSON.
+
+For each product, users should be able to read information about:
+
+* What the product is.
+* How it is produced.
+* Farming/growing process.
+* How it reaches the market.
+* Other useful information.
+
+Include search/filter functionality where appropriate.
+
+---
+
+# 8. Seasonal Recommendations
+
+Create a Seasonal Produce page.
+
+The main page should display four season cards:
+
+* Winter
+* Summer
+* Autumn
+* Spring
+
+When the user clicks a season card, redirect them to a Seasonal Items page for that specific season.
+
+For example:
+
+`seasonalDetails.html?season=summer`
+
+The seasonal page should load its information from JSON.
+
+Display approximately 3–4 seasonal products for each season.
+
+Products can be displayed as a full-width visual section with:
+
+* Rounded/circular product image.
+* Product name.
+* Description.
+* Relevant seasonal information.
+
+The layout should be visually attractive and responsive.
+
+---
+
+# 9. About Page
+
+Create an About page explaining:
+
+* What FreshFind is.
+* The purpose of FreshFind.
+* What markets are shown.
+* Information about farmers.
+* Information about website users.
+* How FreshFind helps users discover markets and produce.
+
+Include animated counters.
+
+For example:
+
+* Markets
+* Farmers
+* Users
+
+If any numbers are dummy/demo numbers, clearly treat them as demonstration data rather than real statistics.
+
+The counters should animate smoothly when they appear on screen.
+
+---
+
+# 10. Contact Us
+
+Create a Contact page with a form that allows users to submit information intended to help connect them with farmers/market opportunities.
+
+The form should contain:
+
+* Name
+* Email
+* Phone Number
+* Products Interested In
+* Area
+* Message
+
+The form must have proper frontend validation.
+
+Show appropriate validation/error messages when information is missing or invalid.
+
+This is a frontend demonstration, so there does not need to be a real backend submission system unless I specifically request one later.
+
+---
+
+# 11. Global ChatBot
+
+Create a chatbot widget that appears on **every main website page**.
+
+The chatbot must NOT have its own separate page.
+
+It should be a floating widget containing:
+
+* Chatbot button.
+* Chat window/panel.
+* User question area.
+* Scripted responses.
+
+The chatbot is NOT a real AI chatbot.
+
+All questions and answers should be predefined/scripted and stored in JSON where practical.
+
+Example questions could include:
+
+* How do I find a market?
+* What markets are open today?
+* Where can I find vegetables?
+* What is seasonal produce?
+* How does FreshFind work?
+* How can I view market details?
+
+The chatbot should feel interactive even though its responses are predefined.
+
+---
+
+# 12. JSON-Based Data
+
+Do not hardcode repeated data throughout the website.
+
+Use JSON files as the primary data source.
+
+Suggested data files:
+
+* `markets.json`
+* `produces.json`
+* `seasonal.json`
+* `chatbot.json`
+
+Markets JSON should contain enough information to power:
+
+* Home
+* Featured Markets
+* Find Market
+* Market Directory
+* Market Details
+* Maps
+
+A market should have a unique ID.
+
+The same JSON data should be reused across pages rather than creating duplicate market information.
+
+---
+
+# 13. Image Asset Instructions
+
+Whenever the website requires an image asset, **DO NOT assume that the image already exists.**
+
+Instead, clearly tell me:
+
+1. What the image should contain.
+2. A detailed image-generation prompt.
+3. Recommended image dimensions.
+4. Recommended aspect ratio.
+5. Suggested filename.
+6. Exact folder/path where I should place the image.
+
+For example:
+
+**Image Prompt:**
+`A realistic modern farmers market in Karachi...`
+
+**Recommended Size:**
+`1920 × 900`
+
+**Filename:**
+`freshfindHero.webp`
+
+**Path:**
+`assets/images/freshfindHero.webp`
+
+I will generate/source the image myself and place it in the requested location.
+
+All website code should then reference the exact path provided.
+
+---
+
+# 14. Folder Structure
+
+Create the project using a clean and organized folder structure.
+
+Use this structure:
+
+```text
+FreshFind/
+│
+├── index.html
+├── auth.html
+├── home.html
+├── findMarket.html
+├── marketDirectory.html
+├── marketDetails.html
+├── produceGuide.html
+├── seasonal.html
+├── seasonalDetails.html
+├── about.html
+├── contact.html
+│
+├── css/
+│   ├── main.css
+│   ├── responsive.css
+│   └── animations.css
+│
+├── js/
+│   ├── main.js
+│   ├── auth.js
+│   ├── home.js
+│   ├── findMarket.js
+│   ├── marketDirectory.js
+│   ├── marketDetails.js
+│   ├── produceGuide.js
+│   ├── seasonal.js
+│   ├── seasonalDetails.js
+│   ├── about.js
+│   ├── contact.js
+│   └── chatbot.js
+│
+├── data/
+│   ├── markets.json
+│   ├── produces.json
+│   ├── seasonal.json
+│   └── chatbot.json
+│
+└── assets/
+    ├── images/
+    ├── icons/
+    └── logo/
+```
+
+Keep the folder structure organized. Do not create unnecessary files or folders unless they are actually required.
+
+---
+
+# 15. Overall Website Rules
+
+The website must be:
+
+* Fully responsive.
+* Modern.
+* Smooth.
+* Visually attractive.
+* Consistent.
+* Easy to navigate.
+* Interactive.
+* Well organized.
+* Mobile friendly.
+* Desktop friendly.
+
+The navbar and footer should remain consistent throughout all main pages.
+
+Use **Font Awesome** for interface icons where appropriate.
+
+Use animations and transitions to make the website feel polished, but avoid excessive animations that make it difficult to use.
+
+The visual design should fit the FreshFind concept: fresh produce, farmers, local markets, nature, freshness, discovery, and community.
+
+---
+
+# 16. Coding Instructions
+
+I want **copy-paste-ready code**.
+
+Whenever you give me code:
+
+* Tell me the exact file where it belongs.
+* Give me the complete code for that requested file when appropriate.
+* If I only need to replace/add a specific section, clearly identify exactly where.
+* Do not give incomplete pseudo-code.
+* Do not use placeholders such as `// add your code here` unless I specifically ask for a structure/example.
+* Make sure file paths are correct.
+* Make sure HTML IDs/classes match the CSS and JavaScript.
+* Make sure JavaScript references the correct JSON files.
+* Make sure all pages work together.
+* Keep the code clean and readable.
+* Use meaningful camelCase JavaScript variable/function names.
+* Add useful comments to organize larger sections.
+* Avoid unnecessary complexity.
+
+Build the project logically rather than trying to create everything at once.
+
+Before writing a major section, make sure it fits the existing folder structure and data architecture.
+
+The final result should feel like one complete FreshFind website rather than unrelated individual pages.

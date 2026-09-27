@@ -1,0 +1,119 @@
+/* LANDING PAGE RESPONSIVE STARTED */
+
+@media (max-width: 600px) {
+    .landingHeading{
+        font-size: var(--fs-3xl);
+    }
+
+    .landingTagline{
+        font-size: var(--fs-base);
+    }
+
+    .landingExploreButton{
+        width: 100%;
+    }
+}
+
+/* LANDING PAGE RESPONSIVE ENDED */
+
+
+/* AUTH PAGE RESPONSIVE STARTED */
+
+@media (max-width: 480px) {
+    .authCard{
+        padding: 30px 22px;
+    }
+
+    .authFormGrid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* AUTH PAGE RESPONSIVE ENDED */
+
+
+/* NAVBAR + FOOTER RESPONSIVE STARTED */
+
+@media (max-width: 900px) {
+    .navbarLinks{
+        gap: 16px;
+    }
+
+    .navLink{
+        font-size: var(--fs-xs);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 12px;
+        position: static;
+    }
+
+    .navbarLinks{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footerContent{
+        flex-direction: column;
+    }
+
+    .footerBottom{
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+}
+
+/* NAVBAR + FOOTER RESPONSIVE ENDED */
+
+
+/* HOME PAGE RESPONSIVE STARTED */
+
+@media (max-width: 768px) {
+    .homeHeroHeading{
+        font-size: var(--fs-3xl);
+    }
+
+    .homeSearchBox{
+        flex-direction: column;
+    }
+
+    .homeSearchButton{
+        width: 100%;
+    }
+
+    .homeHeroButtons{
+        flex-direction: column;
+    }
+
+    .marketCard{
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+/* HOME PAGE RESPONSIVE ENDED */
+
+
+/* CHATBOT RESPONSIVE STARTED */
+
+@media (max-width: 480px) {
+    .chatbotPanel{
+        width: calc(100vw - 30px);
+        right: 15px;
+    }
+
+    .chatbotLauncher{
+        width: 48px;
+        height: 48px;
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+/* CHATBOT RESPONSIVE ENDED */
