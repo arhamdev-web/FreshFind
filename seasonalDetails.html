@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFind — Seasonal Details</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (injected by main.js) -->
+    <div id="navbarPlaceholder"></div>
+
+    <!-- Not Found State -->
+
+    <section class="marketNotFoundSection" id="seasonNotFoundSection">
+        <i class="fa-solid fa-calendar-xmark"></i>
+        <h2>Season Not Found</h2>
+        <p>We couldn't find the season you're looking for.</p>
+        <a href="seasonal.html" class="marketNotFoundButton">Back to Seasonal Produce</a>
+    </section>
+
+    <!-- Seasonal Details Content -->
+
+    <div id="seasonalDetailsContent">
+
+        <section class="pageHeroSection" id="seasonalDetailsHero">
+            <div class="pageHeroContent">
+                <a href="seasonal.html" class="marketDetailsBackLink"><i class="fa-solid fa-arrow-left"></i> Back to Seasonal Produce</a>
+                <h1 id="seasonalDetailsHeading"></h1>
+                <p id="seasonalDetailsSubheading"></p>
+            </div>
+        </section>
+
+        <section class="seasonalItemsSection">
+            <div class="seasonalItemsGrid" id="seasonalItemsGrid"></div>
+        </section>
+
+    </div>
+
+    <!-- Footer (injected by main.js) -->
+    <div id="footerPlaceholder"></div>
+
+    <!-- Chatbot Widget (injected by chatbot.js) -->
+    <div id="chatbotPlaceholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/seasonalDetails.js"></script>
+</body>
+</html>

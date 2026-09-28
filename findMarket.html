@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFind — Find a Market</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (injected by main.js) -->
+    <div id="navbarPlaceholder"></div>
+
+    <!-- Find Market Hero -->
+
+    <section class="pageHeroSection">
+        <div class="pageHeroContent">
+            <h1>Find Your Market</h1>
+            <p>Search by name, or filter by city, area, day, and time.</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+
+    <section class="findMarketFiltersSection">
+        <form class="findMarketFilters" id="findMarketFiltersForm">
+            <input type="text" class="findMarketSearchInput" id="findMarketSearchInput" placeholder="Search by market name, city, or produce...">
+
+            <select class="findMarketSelect" id="findMarketCitySelect">
+                <option value="">All Cities</option>
+            </select>
+
+            <select class="findMarketSelect" id="findMarketAreaSelect">
+                <option value="">All Areas</option>
+            </select>
+
+            <select class="findMarketSelect" id="findMarketDaySelect">
+                <option value="">Any Day</option>
+            </select>
+
+            <select class="findMarketSelect" id="findMarketTimeSelect">
+                <option value="">Any Time</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+                <option value="Night">Night</option>
+            </select>
+
+            <div class="findMarketFilterButtons">
+                <button type="submit" class="findMarketSearchButton">Search</button>
+                <button type="button" class="findMarketResetButton" id="findMarketResetButton">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Results -->
+
+    <section class="findMarketResultsSection">
+        <div class="findMarketResultsGrid" id="findMarketResultsContainer"></div>
+
+        <div class="findMarketEmptyState" id="findMarketEmptyState">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>No markets found</h3>
+            <p>Try adjusting your filters or search term.</p>
+        </div>
+    </section>
+
+    <!-- Footer (injected by main.js) -->
+    <div id="footerPlaceholder"></div>
+
+    <!-- Chatbot Widget (injected by chatbot.js) -->
+    <div id="chatbotPlaceholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/findMarket.js"></script>
+</body>
+</html>

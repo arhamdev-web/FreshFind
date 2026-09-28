@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFind — Market Directory</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (injected by main.js) -->
+    <div id="navbarPlaceholder"></div>
+
+    <!-- Market Directory Hero -->
+
+    <section class="pageHeroSection">
+        <div class="pageHeroContent">
+            <h1>Market Directory</h1>
+            <p>Every market on FreshFind, all in one place.</p>
+        </div>
+    </section>
+
+    <!-- Map -->
+
+    <section class="marketDirectoryMapSection">
+        <div id="marketDirectoryMap" class="marketDirectoryMap"></div>
+    </section>
+
+    <!-- Cards -->
+
+    <section class="marketDirectorySection">
+        <div class="marketDirectoryGrid" id="marketDirectoryGrid"></div>
+    </section>
+
+    <!-- Expand Modal -->
+
+    <div class="marketExpandOverlay" id="marketExpandOverlay">
+        <div class="marketExpandModal">
+            <button type="button" class="marketExpandCloseButton" id="marketExpandCloseButton" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="marketExpandImage" id="marketExpandImage"></div>
+            <div class="marketExpandBody" id="marketExpandBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer (injected by main.js) -->
+    <div id="footerPlaceholder"></div>
+
+    <!-- Chatbot Widget (injected by chatbot.js) -->
+    <div id="chatbotPlaceholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/marketDirectory.js"></script>
+</body>
+</html>

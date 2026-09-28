@@ -885,3 +885,1204 @@ h1, h2, h3 {
 }
 
 /* HOME PAGE CSS ENDED */
+
+/* PAGE HERO CSS STARTED (shared lightweight hero for inner pages) */
+
+.pageHeroSection{
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.pageHeroContent h1{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-3xl);
+    margin-bottom: 10px;
+}
+
+.pageHeroContent p{
+    color: rgba(242, 246, 238, 0.8);
+    font-size: var(--fs-base);
+}
+
+/* PAGE HERO CSS ENDED */
+
+
+/* FIND MARKET PAGE CSS STARTED */
+
+.findMarketFiltersSection{
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    background-color: var(--card);
+    border-bottom: 1px solid var(--border);
+}
+
+.findMarketFilters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.findMarketSearchInput{
+    flex: 1;
+    min-width: 220px;
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    outline: none;
+}
+
+.findMarketSearchInput:focus{
+    border-color: var(--accent);
+}
+
+.findMarketSelect{
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    color: var(--text);
+    background-color: var(--card);
+    outline: none;
+}
+
+.findMarketSelect:focus{
+    border-color: var(--accent);
+}
+
+.findMarketFilterButtons{
+    display: flex;
+    gap: 8px;
+}
+
+.findMarketSearchButton{
+    padding: 11px 22px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: var(--card);
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.findMarketSearchButton:hover{
+    background-color: var(--accent-hover);
+}
+
+.findMarketResetButton{
+    padding: 11px 18px;
+    background-color: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.findMarketResetButton:hover{
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.findMarketResultsSection{
+    padding: 40px;
+    min-height: 40vh;
+}
+
+.findMarketResultsGrid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.findMarketEmptyState{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+}
+
+.findMarketEmptyStateVisible{
+    display: flex;
+}
+
+.findMarketEmptyState i{
+    font-size: var(--fs-3xl);
+    color: var(--border);
+    margin-bottom: 15px;
+}
+
+.findMarketEmptyState h3{
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+/* FIND MARKET PAGE CSS ENDED */
+
+
+/* MARKET DIRECTORY PAGE CSS STARTED */
+
+.marketDirectoryMapSection{
+    padding: 30px 40px 0px;
+}
+
+.marketDirectoryMap{
+    width: 100%;
+    height: 420px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+.marketDirectorySection{
+    padding: 40px;
+}
+
+.marketDirectoryGrid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.directoryExpandButton{
+    width: 100%;
+    padding: 11px;
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.directoryExpandButton:hover{
+    background-color: var(--accent);
+    color: var(--card);
+}
+
+/* MARKET DIRECTORY PAGE CSS ENDED */
+
+
+/* MARKET EXPAND MODAL CSS STARTED */
+
+.marketExpandOverlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(31, 46, 26, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 500;
+    padding: 20px;
+}
+
+.marketExpandOverlayVisible{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.marketExpandModal{
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    max-height: 85vh;
+    background-color: var(--card);
+    border-radius: 16px;
+    overflow-y: auto;
+}
+
+.marketExpandCloseButton{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.marketExpandImage{
+    height: 160px;
+    overflow: hidden;
+}
+
+.marketExpandImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.marketExpandBody{
+    padding: 22px;
+}
+
+.marketExpandBody h3{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-lg);
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.marketExpandAddress{
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.marketExpandDescription{
+    font-size: var(--fs-sm);
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.marketExpandSchedule h4{
+    font-size: var(--fs-sm);
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.marketExpandScheduleRow{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    padding: 6px 0px;
+    border-bottom: 1px solid var(--border);
+}
+
+.marketExpandBody .marketCardProduce{
+    margin: 16px 0px;
+}
+
+.marketExpandDetailsButton{
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: var(--accent);
+    color: var(--card);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.marketExpandDetailsButton:hover{
+    background-color: var(--accent-hover);
+}
+
+/* MARKET EXPAND MODAL CSS ENDED */
+
+
+/* MARKET NOT FOUND CSS STARTED */
+
+.marketNotFoundSection{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 50vh;
+    color: var(--text-secondary);
+}
+
+.marketNotFoundVisible{
+    display: flex;
+}
+
+.marketNotFoundSection i{
+    font-size: var(--fs-4xl);
+    color: var(--border);
+    margin-bottom: 20px;
+}
+
+.marketNotFoundSection h2{
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-family: "Fraunces", serif;
+}
+
+.marketNotFoundButton{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent);
+    color: var(--card);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.marketNotFoundButton:hover{
+    background-color: var(--accent-hover);
+}
+
+/* MARKET NOT FOUND CSS ENDED */
+
+
+/* MARKET DETAILS PAGE CSS STARTED */
+
+.marketDetailsBanner{
+    position: relative;
+    height: 340px;
+    background-color: var(--primary);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.marketDetailsBannerOverlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(31,46,26,0.15) 0%, rgba(31,46,26,0.85) 100%);
+}
+
+.marketDetailsBannerContent{
+    position: relative;
+    z-index: 1;
+    color: var(--background);
+    padding: 30px 40px;
+    width: 100%;
+}
+
+.marketDetailsBackLink{
+    color: rgba(242, 246, 238, 0.85);
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    display: inline-block;
+    margin-bottom: 14px;
+    transition: all 0.2s ease;
+}
+
+.marketDetailsBackLink:hover{
+    color: var(--background);
+}
+
+.marketDetailsBannerContent h1{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-4xl);
+    margin-bottom: 8px;
+}
+
+.marketDetailsBannerContent p{
+    font-size: var(--fs-base);
+    color: rgba(242, 246, 238, 0.9);
+}
+
+.marketDetailsSection{
+    padding: 50px 40px;
+}
+
+.marketDetailsGrid{
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.marketDetailsMain{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.marketDetailsSidebar{
+    flex: 1;
+    position: sticky;
+    top: 110px;
+}
+
+.marketDetailsBlock h2{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-xl);
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.marketDetailsBlock p{
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: var(--fs-base);
+}
+
+.marketDetailsProduceGrid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.marketDetailsProduceTag{
+    background-color: var(--background);
+    color: var(--text);
+    font-size: var(--fs-sm);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+.marketDetailsScheduleTable{
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.marketDetailsScheduleRow{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 18px;
+    font-size: var(--fs-sm);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+}
+
+.marketDetailsScheduleRow:last-child{
+    border-bottom: none;
+}
+
+.marketDetailsScheduleRow:nth-child(even){
+    background-color: var(--background);
+}
+
+.marketDetailsAddress{
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.marketDetailsMap{
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+/* MARKET DETAILS PAGE CSS ENDED */
+
+
+/* PRODUCE GUIDE PAGE CSS STARTED */
+
+.produceFiltersSection{
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    background-color: var(--card);
+    border-bottom: 1px solid var(--border);
+}
+
+.produceFilters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 700px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.produceSearchInput{
+    flex: 1;
+    min-width: 220px;
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    outline: none;
+}
+
+.produceSearchInput:focus{
+    border-color: var(--accent);
+}
+
+.produceSelect{
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    color: var(--text);
+    background-color: var(--card);
+    outline: none;
+}
+
+.produceSelect:focus{
+    border-color: var(--accent);
+}
+
+.produceFilterButtons{
+    display: flex;
+    gap: 8px;
+}
+
+.produceSearchButton{
+    padding: 11px 22px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: var(--card);
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.produceSearchButton:hover{
+    background-color: var(--accent-hover);
+}
+
+.produceResetButton{
+    padding: 11px 18px;
+    background-color: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.produceResetButton:hover{
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.produceResultsSection{
+    padding: 40px;
+    min-height: 40vh;
+}
+
+.produceResultsGrid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.produceCard{
+    width: 240px;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.produceCard:hover{
+    border-color: var(--accent);
+}
+
+.produceCardImage{
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.produceCardImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.produceCardContent{
+    padding: 16px;
+}
+
+.produceCardCategory{
+    display: inline-block;
+    background-color: var(--background);
+    color: var(--accent);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.produceCardName{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-base);
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.produceCardDescription{
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.produceCardButton{
+    width: 100%;
+    padding: 9px;
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    font-family: inherit;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.produceCardButton:hover{
+    background-color: var(--accent);
+    color: var(--card);
+}
+
+.produceEmptyState{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+}
+
+.produceEmptyStateVisible{
+    display: flex;
+}
+
+.produceEmptyState i{
+    font-size: var(--fs-3xl);
+    color: var(--border);
+    margin-bottom: 15px;
+}
+
+.produceEmptyState h3{
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+/* PRODUCE GUIDE PAGE CSS ENDED */
+
+
+/* PRODUCE EXPAND MODAL CSS STARTED */
+
+.produceExpandOverlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(31, 46, 26, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 500;
+    padding: 20px;
+}
+
+.produceExpandOverlayVisible{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.produceExpandModal{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    max-height: 85vh;
+    background-color: var(--card);
+    border-radius: 16px;
+    overflow-y: auto;
+}
+
+.produceExpandImage{
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.produceExpandImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.produceExpandBody{
+    padding: 22px;
+}
+
+.produceExpandBody h3{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-lg);
+    color: var(--primary);
+    margin: 10px 0px;
+}
+
+.produceExpandDescription{
+    font-size: var(--fs-sm);
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.produceExpandDetail{
+    margin-bottom: 16px;
+}
+
+.produceExpandDetail h4{
+    font-size: var(--fs-sm);
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.produceExpandDetail p{
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* PRODUCE EXPAND MODAL CSS ENDED */
+
+
+/* SEASONAL PAGE CSS STARTED */
+
+.seasonalSection{
+    padding: 50px 40px;
+}
+
+.seasonalGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.seasonCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: 16px;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.seasonCard:hover{
+    transform: translateY(-3px);
+}
+
+.seasonCard h2{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-xl);
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.seasonCard p{
+    color: var(--text-secondary);
+    font-size: var(--fs-sm);
+    margin-bottom: 16px;
+}
+
+.seasonCardIcon{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-2xl);
+    margin-bottom: 18px;
+}
+
+.seasonCardLink{
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.seasonCard-winter{ background-color: #EAF1F8; }
+.seasonCard-winter .seasonCardIcon{ background-color: #4A6FA5; color: #FFFFFF; }
+.seasonCard-winter .seasonCardLink{ color: #4A6FA5; }
+
+.seasonCard-summer{ background-color: #FDF1E3; }
+.seasonCard-summer .seasonCardIcon{ background-color: #D98324; color: #FFFFFF; }
+.seasonCard-summer .seasonCardLink{ color: #D98324; }
+
+.seasonCard-autumn{ background-color: #FBEEE3; }
+.seasonCard-autumn .seasonCardIcon{ background-color: #B5651D; color: #FFFFFF; }
+.seasonCard-autumn .seasonCardLink{ color: #B5651D; }
+
+.seasonCard-spring{ background-color: #FBEAF0; }
+.seasonCard-spring .seasonCardIcon{ background-color: #C2678D; color: #FFFFFF; }
+.seasonCard-spring .seasonCardLink{ color: #C2678D; }
+
+/* SEASONAL PAGE CSS ENDED */
+
+
+/* SEASONAL DETAILS PAGE CSS STARTED */
+
+.pageHeroSection.seasonal-winter{ background-color: #4A6FA5; }
+.pageHeroSection.seasonal-summer{ background-color: #D98324; }
+.pageHeroSection.seasonal-autumn{ background-color: #B5651D; }
+.pageHeroSection.seasonal-spring{ background-color: #C2678D; }
+
+.seasonalItemsSection{
+    padding: 50px 40px;
+}
+
+.seasonalItemsGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.seasonalItemCard{
+    width: 180px;
+    text-align: center;
+}
+
+.seasonalItemImage{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 3px solid var(--card);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.seasonalItemImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seasonalItemCard h3{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-base);
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.seasonalItemCard p{
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* SEASONAL DETAILS PAGE CSS ENDED */
+
+
+/* ABOUT PAGE CSS STARTED */
+
+.aboutIntroSection{
+    padding: 60px 40px;
+}
+
+.aboutIntroContent{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutIntroContent h2{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-3xl);
+    color: var(--primary);
+    margin-bottom: 18px;
+}
+
+.aboutIntroContent p{
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.aboutStatsSection{
+    background-color: var(--primary);
+    padding: 50px 40px;
+}
+
+.aboutStatsGrid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.aboutStatCard{
+    text-align: center;
+    color: var(--background);
+    min-width: 140px;
+}
+
+.aboutStatCard i{
+    font-size: var(--fs-2xl);
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.aboutStatNumber{
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-4xl);
+    font-weight: 700;
+}
+
+.aboutStatCard p{
+    color: rgba(242, 246, 238, 0.75);
+    font-size: var(--fs-sm);
+    margin-top: 5px;
+}
+
+.aboutMissionSection{
+    padding: 60px 40px;
+}
+
+.aboutMissionGrid{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.aboutMissionCard{
+    max-width: 280px;
+    text-align: center;
+    padding: 10px;
+}
+
+.aboutMissionCard i{
+    font-size: var(--fs-2xl);
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.aboutMissionCard h3{
+    font-family: "Fraunces", serif;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.aboutMissionCard p{
+    color: var(--text-secondary);
+    font-size: var(--fs-sm);
+    line-height: 1.6;
+}
+
+/* ABOUT PAGE CSS ENDED */
+
+
+/* CONTACT PAGE CSS STARTED */
+
+.contactSection{
+    padding: 50px 40px;
+}
+
+.contactGrid{
+    display: flex;
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.contactFormCard{
+    flex: 2;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.contactFormCard h2,
+.contactInfoCard h2{
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-xl);
+    color: var(--primary);
+    margin-bottom: 22px;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contactFormGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactFormGroup > label{
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+}
+
+.contactCheckboxGroup{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contactCheckboxLabel{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: var(--fs-sm);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.contactCheckboxLabel:has(input:checked){
+    border-color: var(--accent);
+    background-color: var(--background);
+    color: var(--accent);
+}
+
+.contactForm textarea{
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: var(--fs-base);
+    color: var(--text);
+    outline: none;
+    resize: vertical;
+    transition: all 0.2s ease;
+}
+
+.contactForm textarea:focus{
+    border-color: var(--accent);
+}
+
+.contactInfoCard{
+    flex: 1;
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.contactInfoCard h2{
+    color: var(--background);
+}
+
+.contactInfoRow{
+    display: flex;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.contactInfoRow i{
+    font-size: var(--fs-lg);
+    color: var(--accent);
+    margin-top: 3px;
+}
+
+.contactInfoRow h4{
+    font-size: var(--fs-sm);
+    margin-bottom: 4px;
+}
+
+.contactInfoRow p{
+    font-size: var(--fs-sm);
+    color: rgba(242, 246, 238, 0.75);
+}
+
+/* CONTACT PAGE CSS ENDED */
+
+
+/* CONTACT SUCCESS OVERLAY CSS STARTED */
+
+.contactSuccessOverlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(31, 46, 26, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 500;
+    padding: 20px;
+}
+
+.contactSuccessOverlayVisible{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.contactSuccessCard{
+    background-color: var(--card);
+    border-radius: 16px;
+    padding: 40px 35px;
+    text-align: center;
+    max-width: 360px;
+}
+
+.contactSuccessCard i{
+    font-size: var(--fs-4xl);
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.contactSuccessCard h2{
+    font-family: "Fraunces", serif;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.contactSuccessCard p{
+    color: var(--text-secondary);
+    font-size: var(--fs-sm);
+    margin-bottom: 22px;
+}
+
+/* CONTACT SUCCESS OVERLAY CSS ENDED */

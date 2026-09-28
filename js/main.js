@@ -7,6 +7,71 @@ function fetchJSON(path) {
     });
 }
 
+// TIME CATEGORY HELPER
+
+function getTimeCategory(opensTime) {
+    const hour = parseInt(opensTime.split(":")[0], 10);
+    if (hour < 12) return "Morning";
+    if (hour < 17) return "Afternoon";
+    if (hour < 21) return "Evening";
+    return "Night";
+}
+
+
+// SHARED MARKET CARD BUILDER
+
+function createMarketCardElement(market, actionType) {
+    const card = document.createElement("div");
+    card.classList.add("marketCard");
+
+    const firstSchedule = market.schedule[0];
+
+    const action = actionType === "expand"
+        ? `<button type="button" class="directoryExpandButton" data-market-id="${market.id}">Expand</button>`
+        : `<a class="marketCardLink" href="marketDetails.html?id=${market.id}">See Details</a>`;
+
+    card.innerHTML = `
+        <div class="marketCardImage">
+            <img src="${market.image}" alt="${market.name}">
+        </div>
+        <div class="marketCardContent">
+            <h3 class="marketCardName">${market.name}</h3>
+            <div class="marketCardMeta">
+                <span><i class="fa-solid fa-location-dot"></i> ${market.area}, ${market.city}</span>
+                <span><i class="fa-solid fa-clock"></i> ${firstSchedule.day}, ${firstSchedule.opens}–${firstSchedule.closes}</span>
+            </div>
+            <div class="marketCardProduce">
+                ${market.produce.map(function (item) { return "<span>" + item + "</span>"; }).join("")}
+            </div>
+            ${action}
+        </div>
+    `;
+
+    return card;
+}
+
+
+// SHARED PRODUCE CARD BUILDER
+
+function createProduceCardElement(produce) {
+    const card = document.createElement("div");
+    card.classList.add("produceCard");
+
+    card.innerHTML = `
+        <div class="produceCardImage">
+            <img src="${produce.image}" alt="${produce.name}">
+        </div>
+        <div class="produceCardContent">
+            <span class="produceCardCategory">${produce.category}</span>
+            <h3 class="produceCardName">${produce.name}</h3>
+            <p class="produceCardDescription">${produce.description}</p>
+            <button type="button" class="produceCardButton" data-produce-id="${produce.id}">Learn More</button>
+        </div>
+    `;
+
+    return card;
+}
+
 
 // LOADING TRANSITION (shared — plays assets/animations/loading.json before navigating)
 

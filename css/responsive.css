@@ -117,3 +117,146 @@
 }
 
 /* CHATBOT RESPONSIVE ENDED */
+
+
+/* FIND MARKET PAGE RESPONSIVE STARTED */
+
+@media (max-width: 768px) {
+    .findMarketFilters{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .findMarketSelect,
+    .findMarketSearchInput{
+        width: 100%;
+    }
+
+    .findMarketFilterButtons{
+        flex-direction: column;
+    }
+
+    .findMarketSearchButton,
+    .findMarketResetButton{
+        width: 100%;
+    }
+}
+
+/* FIND MARKET PAGE RESPONSIVE ENDED */
+
+
+/* MARKET DIRECTORY RESPONSIVE STARTED */
+
+@media (max-width: 768px) {
+    .marketDirectoryMap{
+        height: 300px;
+    }
+}
+
+/* MARKET DIRECTORY RESPONSIVE ENDED */
+
+
+/* MARKET DETAILS RESPONSIVE STARTED */
+
+@media (max-width: 900px) {
+    .marketDetailsGrid{
+        flex-direction: column;
+    }
+
+    .marketDetailsSidebar{
+        position: static;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .marketDetailsBanner{
+        height: 260px;
+    }
+
+    .marketDetailsBannerContent h1{
+        font-size: var(--fs-2xl);
+    }
+}
+
+/* MARKET DETAILS RESPONSIVE ENDED */
+
+
+/* PRODUCE GUIDE RESPONSIVE STARTED */
+
+@media (max-width: 768px) {
+    .produceFilters{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .produceSelect,
+    .produceSearchInput{
+        width: 100%;
+    }
+
+    .produceFilterButtons{
+        flex-direction: column;
+    }
+
+    .produceSearchButton,
+    .produceResetButton{
+        width: 100%;
+    }
+}
+
+/* PRODUCE GUIDE RESPONSIVE ENDED */
+
+
+/* SEASONAL RESPONSIVE STARTED */
+
+@media (max-width: 600px) {
+    .seasonalGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .seasonalItemCard{
+        width: 140px;
+    }
+
+    .seasonalItemImage{
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/* SEASONAL RESPONSIVE ENDED */
+
+
+/* ABOUT PAGE RESPONSIVE STARTED */
+
+@media (max-width: 600px) {
+    .aboutStatsGrid{
+        gap: 25px;
+    }
+
+    .aboutStatCard{
+        min-width: 42%;
+    }
+
+    .aboutStatNumber{
+        font-size: var(--fs-3xl);
+    }
+}
+
+/* ABOUT PAGE RESPONSIVE ENDED */
+
+
+/* CONTACT PAGE RESPONSIVE STARTED */
+
+@media (max-width: 900px) {
+    .contactGrid{
+        flex-direction: column;
+    }
+
+    .contactInfoCard{
+        width: 100%;
+    }
+}
+
+/* CONTACT PAGE RESPONSIVE ENDED */
