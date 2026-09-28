@@ -2086,3 +2086,204 @@ h1, h2, h3 {
 }
 
 /* CONTACT SUCCESS OVERLAY CSS ENDED */
+
+
+/* ============================================= */
+/* FLOATING NAVIGATION                            */
+/* ============================================= */
+
+.navTrigger{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.navBrandReveal{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: var(--fs-lg);
+    color: var(--primary);
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0px;
+    opacity: 0;
+    transform: translateX(14px);
+    transition: max-width 0.55s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.4s ease, transform 0.55s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.navTriggerOpen .navBrandReveal{
+    max-width: 220px;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.navCircleButton{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+    flex-shrink: 0;
+}
+
+.navCircleButton:hover{
+    transform: scale(1.06);
+}
+
+.navCircleLogo{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.navCircleX{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transform: rotate(-45deg) scale(0.6);
+    transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.navCircleX span{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--background);
+    border-radius: 2px;
+}
+
+.navCircleX span:first-child{ transform: rotate(45deg); }
+.navCircleX span:last-child{ transform: rotate(-45deg); }
+
+.navTriggerOpen .navCircleLogo{
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.navTriggerOpen .navCircleX{
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.navOverlay{
+    position: fixed;
+    inset: 0;
+    background-color: var(--primary);
+    z-index: 1050;
+    clip-path: circle(0% at calc(100% - 53px) 53px);
+    transition: clip-path 0.65s cubic-bezier(0.65, 0, 0.35, 1);
+    pointer-events: none;
+}
+
+.navOverlayVisible{
+    clip-path: circle(150% at calc(100% - 53px) 53px);
+    pointer-events: all;
+}
+
+.navOverlayList{
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 42vh 0px;
+    scroll-snap-type: y proximity;
+    scrollbar-width: none;
+}
+
+.navOverlayList::-webkit-scrollbar{
+    display: none;
+}
+
+.navOverlayItem{
+    --nav-focus: 0;
+    scroll-snap-align: center;
+    text-decoration: none;
+    text-align: center;
+    padding: 22px 20px;
+    opacity: calc(0.3 + var(--nav-focus) * 0.7);
+    transform: scale(calc(0.82 + var(--nav-focus) * 0.28));
+}
+
+.navOverlayChapter{
+    display: block;
+    font-size: var(--fs-xs);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(242, 246, 238, 0.5);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.navOverlayLabel{
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: var(--fs-3xl);
+    color: rgba(242, 246, 238, 0.55);
+    font-weight: 500;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.navOverlayItemActive .navOverlayLabel{
+    color: var(--background);
+    font-weight: 700;
+}
+
+.navOverlayItemActive .navOverlayChapter{
+    color: var(--accent);
+}
+
+body.navOpenLock{
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .navTrigger{
+        top: 16px;
+        right: 16px;
+        gap: 10px;
+    }
+
+    .navCircleButton{
+        width: 48px;
+        height: 48px;
+    }
+
+    .navCircleLogo{
+        width: 26px;
+        height: 26px;
+    }
+
+    .navOverlay{
+        clip-path: circle(0% at calc(100% - 45px) 45px);
+    }
+
+    .navOverlayVisible{
+        clip-path: circle(150% at calc(100% - 45px) 45px);
+    }
+
+    .navOverlayLabel{
+        font-size: var(--fs-2xl);
+    }
+
+    .navOverlayChapter{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}
